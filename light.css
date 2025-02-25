@@ -1,0 +1,155 @@
+/* 🔥 Import Google Font (Aggressive Style) */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* 🟠 Main Container */
+.container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* 🖼 Profile Image */
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1.6px solid #ff9800;
+    margin-bottom: 10px;
+}
+
+/* 👤 Username */
+.profile h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff9800;
+}
+
+/* 💻 Role */
+.role {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+/* 🔥 About Section */
+.about {
+    margin-top: 15px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ✍️ About Heading */
+.about h2 {
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;  
+    color: #ff9800;
+    margin-bottom: 5px;
+}
+
+/* 📝 About Text */
+.about p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+/* 🔗 Social Media Cards */
+.social-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.social-card img {
+    width: 25px;
+    height: 25px;
+}
+
+.social-card span {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* 🎇 Hover Effect */
+.social-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+/* 🔥 All Cards Same Background */
+.github, .linkedin, .twitter , .instagram{
+    background: #ffffff;
+}
+
+
+/* 📱 Responsive Design (Mobile Optimization) */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 95%;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile h1 {
+        font-size: 18px;
+    }
+
+    .role {
+        font-size: 12px;
+    }
+
+    .about h2 {
+        font-size: 16px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .social-card {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .social-card img {
+        width: 20px;
+        height: 20px;
+    }
+}
