@@ -16,6 +16,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    margin-top: 6%;
 }
 
 /* 🟠 Main Container */
@@ -153,3 +154,4 @@ body {
         height: 20px;
     }
 }
+
