@@ -14,8 +14,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* 🟠 Main Container */
@@ -114,12 +116,40 @@ body {
 }
 
 
-/* 📱 Responsive Design (Mobile Optimization) */
-@media screen and (max-width: 480px) {
+/* 📱 Responsive Design */
+
+/* For tablets */
+@media screen and (max-width: 768px) {
     .container {
-        max-width: 95%;
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .profile img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .profile h1 {
+        font-size: 20px;
+    }
+
+    .social-card:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
         padding: 15px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        margin: 10px;
     }
 
     .profile img {
@@ -135,6 +165,11 @@ body {
         font-size: 12px;
     }
 
+    .about {
+        padding: 12px;
+        margin-top: 12px;
+    }
+
     .about h2 {
         font-size: 16px;
     }
@@ -146,10 +181,31 @@ body {
     .social-card {
         padding: 10px;
         font-size: 14px;
+        margin-top: 8px;
     }
 
     .social-card img {
         width: 20px;
         height: 20px;
+    }
+}
+
+/* For very small screens */
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 10px;
+    }
+
+    .profile h1 {
+        font-size: 16px;
+    }
+
+    .about p {
+        font-size: 11px;
+    }
+
+    .social-card {
+        padding: 8px;
+        font-size: 13px;
     }
 }
